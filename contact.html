@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+<title>Contact-Fabien</title>
+<link rel="stylesheet"href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a class="retour-accueil"
+    href="index.html">retour à l'accueil
+</a>
+
+
+    <h1>Un projet?</h1>
+    <p style="font-size: 18px;
+    margin-bottom: 40px;">
+    Contactez-moi</p>
+
+    <form action="https://formspree.io/f/xjkoojdy"
+    method="post"
+    class="contact-form">
+
+    <fieldset class="coordonnees">
+        <legend>Vos coordonnées</legend>
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom"
+        name="nom" required/>
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom"
+        name="prenom" required/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"
+        name="email" required/>
+    </fieldset>
+
+        <fieldset class="projet">
+<legend> Votre projet</legend>
+
+            <label for="message">Décrivez votre projet</label>
+            <textarea id="message"
+            name="message" rows="6" required>
+        </textarea>
+        </fieldset>
+
+        <input type="hidden" name="_next" value="merci.html"/>
+        <fieldset>
+            
+            <button type="submit">Envoyer</button>
+        </fieldset>
+    </form>
+
+
+
+</body>
+</html>
